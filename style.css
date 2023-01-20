@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0px none;
+}
+
+body {
+
+}
+
+.card-container {
+    width:400px;
+    height: 300px;
+    margin:5rem auto;
+    border:1px solid black;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.card {
+    background: #fff;
+    border:2px solid black;
+    border-radius: .25rem;
+    padding: .5rem;
+    transform: translateX(100px);
+    opacity: 0;
+    transition: 150ms;
+}
+
+.card.show {
+    transform: translateX(0);
+    opacity: 1;
+}
